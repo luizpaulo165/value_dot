@@ -1,0 +1,26 @@
+{
+    "name": "ValueDot",
+    "version": "1.1",
+    "description": "Plugin for artist check values of images.",
+    "manifest_version": 2,
+    "permissions": ["activeTab", "declarativeContent", "storage", "file://*/*", "https://*/*", "http://*/*"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "images/valuedot_16.png",
+            "32": "images/valuedot_32.png",
+            "48": "images/valuedot_48.png",
+            "128": "images/valuedot_128.png"
+        },
+        "icons": {
+            "16": "images/valuedot_16.png",
+            "32": "images/valuedot_32.png",
+            "48": "images/valuedot_48.png",
+            "128": "images/valuedot_128.png"
+        }
+    }
+
+  }
