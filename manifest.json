@@ -1,26 +1,25 @@
 {
-    "name": "ValueDot",
-    "version": "1.1",
-    "description": "Plugin for artist check values of images.",
-    "manifest_version": 2,
-    "permissions": ["activeTab", "declarativeContent", "storage", "file://*/*", "https://*/*", "http://*/*"],
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": true
-    },
-    "browser_action": {
-        "default_icon": {
-            "16": "images/valuedot_16.png",
-            "32": "images/valuedot_32.png",
-            "48": "images/valuedot_48.png",
-            "128": "images/valuedot_128.png"
-        },
-        "icons": {
-            "16": "images/valuedot_16.png",
-            "32": "images/valuedot_32.png",
-            "48": "images/valuedot_48.png",
-            "128": "images/valuedot_128.png"
-        }
+  "manifest_version": 3,
+  "name": "Grayfy",
+  "version": "2.0",
+  "description": "Plugin for artist check values of images.",
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
+  "host_permissions": ["http://*/", "https://*/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/grayfy_16.png",
+    "32": "images/grayfy_32.png",
+    "48": "images/grayfy_48.png",
+    "128": "images/grayfy_128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/grayfy_16.png",
+      "32": "images/grayfy_32.png",
+      "48": "images/grayfy_48.png",
+      "128": "images/grayfy_128.png"
     }
-
   }
+}
